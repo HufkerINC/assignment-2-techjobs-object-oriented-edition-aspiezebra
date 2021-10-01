@@ -38,10 +38,12 @@ public class JobTest {
 //
 //    }
     @Test
-    public void jobID(){
-        Job a1 = new Job();
-        Job a2 = new Job();
-        assertNotEquals(a1, a2);
+    public void testSettingJobId(){
+        Job job1 = new Job();
+        Job job2 = new Job();
+//        new Job();
+//        new Job();
+        assertNotEquals(job1.getId(), job2.getId());
     }
     @Test
     public void testJobConstructorSetsAllFields(){
